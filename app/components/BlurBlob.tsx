@@ -1,8 +1,20 @@
 // components/BlurBlob.jsx
 import React from "react";
 import PropTypes from "prop-types";
+interface BlurBlobProps {
+  position: {
+    top?: string;
+    left?: string;
+    right?: string;
+    bottom?: string;
+  };
+  size: {
+    width: string;
+    height: string;
+  };
+}
 
-const BlurBlob = ({ position, size }) => {
+const BlurBlob: React.FC<BlurBlobProps> = ({ position, size }) => {
   // Destructure position and size with default values
   const { top, left } = position;
   const { width, height } = size;

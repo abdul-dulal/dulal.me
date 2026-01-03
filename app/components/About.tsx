@@ -25,8 +25,10 @@ const About = () => {
             Abdul Dulal
           </h2>
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl  md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight flex items-center">
-            <span className="mr-4 text-white">I am a </span>
+          <h3 className="text-2xl  md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight flex items-center flex-wrap justify-center">
+            <span className="mr-4 text-3xl font-bold text-white sm:text-2xl">
+              I am a{" "}
+            </span>
 
             <TrueFocus
               sentence="Front-End Developer"
@@ -76,7 +78,7 @@ const About = () => {
           >
             <Image
               src={profileImage}
-              alt="Tarun Kaushik"
+              alt="Abdul dulal"
               className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
             />
           </Tilt>

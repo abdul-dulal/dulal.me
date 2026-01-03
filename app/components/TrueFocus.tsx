@@ -56,12 +56,7 @@ const TrueFocus = ({
   }, [manualMode, animationDuration, pauseBetweenAnimations, words.length]);
 
   useEffect(() => {
-    if (
-      currentIndex === null ||
-      !containerRef.current ||
-      !wordRefs.current[currentIndex]
-    )
-      return;
+    if (!containerRef.current || !wordRefs.current[currentIndex]) return;
 
     const parentRect = containerRef.current.getBoundingClientRect();
     const activeRect = wordRefs.current[currentIndex]!.getBoundingClientRect();
@@ -95,7 +90,9 @@ const TrueFocus = ({
         return (
           <span
             key={index}
-            ref={(el) => (wordRefs.current[index] = el)}
+            ref={(el: HTMLSpanElement | null) => {
+              wordRefs.current[index] = el;
+            }}
             className={`focus-word ${manualMode ? "manual" : ""} ${
               isActive && !manualMode ? "active" : ""
             }`}
@@ -122,7 +119,7 @@ const TrueFocus = ({
           y: focusRect.y,
           width: focusRect.width,
           height: focusRect.height,
-          opacity: currentIndex >= 0 ? 1 : 0,
+          opacity: 1,
         }}
         transition={{ duration: animationDuration }}
         style={
