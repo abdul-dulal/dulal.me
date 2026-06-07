@@ -1,14 +1,12 @@
 "use client";
 import Link from "next/link";
 import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { scrollToSection } from "../utils/smoothScroll";
 
 const Footer = () => {
   // Smooth scroll function
-  const handleScroll = (sectionId: any) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleScroll = (sectionId: string) => {
+    scrollToSection(sectionId);
   };
 
   return (
@@ -23,7 +21,7 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
+            { name: "Projects", id: "work" },
             { name: "Education", id: "education" },
           ].map((item, index) => (
             <button

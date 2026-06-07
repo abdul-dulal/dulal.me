@@ -1,10 +1,11 @@
 // Skills Section Logo's
 import htmlLogo from "./assets/tech_logo/html.png";
 import cssLogo from "./assets/tech_logo/css.png";
+import vue from "./assets/tech_logo/vue.png";
 import sassLogo from "./assets/tech_logo/sass.png";
 import javascriptLogo from "./assets/tech_logo/javascript.png";
 import reactjsLogo from "./assets/tech_logo/reactjs.png";
-import angularLogo from "./assets/tech_logo/angular.png";
+
 import reduxLogo from "./assets/tech_logo/redux.png";
 import nextjsLogo from "./assets/tech_logo/nextjs.png";
 import tailwindcssLogo from "./assets/tech_logo/tailwindcss.png";
@@ -28,7 +29,9 @@ import vscodeLogo from "./assets/tech_logo/vscode.png";
 import postmanLogo from "./assets/tech_logo/postman.png";
 import mcLogo from "./assets/tech_logo/mc.png";
 import figmaLogo from "./assets/tech_logo/figma.png";
-import netlifyLogo from "./assets/tech_logo/netlify.png";
+
+import claudeLogo from "./assets/tech_logo/claude.png";
+import codexLogo from "./assets/tech_logo/codex.png";
 import vercelLogo from "./assets/tech_logo/vercel.png";
 import postgreLogo from "./assets/tech_logo/postgre.png";
 import csharpLogo from "./assets/tech_logo/csharp.png";
@@ -69,7 +72,7 @@ export const SkillsInfo = [
       { name: "SASS", logo: sassLogo },
       { name: "JavaScript", logo: javascriptLogo },
       { name: "React JS", logo: reactjsLogo },
-      // { name: "Angular", logo: angularLogo },
+      { name: "Vue JS", logo: vue },
       { name: "Redux", logo: reduxLogo },
       { name: "Next JS", logo: nextjsLogo },
       { name: "Tailwind CSS", logo: tailwindcssLogo },
@@ -109,11 +112,12 @@ export const SkillsInfo = [
       { name: "Git", logo: gitLogo },
       { name: "GitHub", logo: githubLogo },
       { name: "VS Code", logo: vscodeLogo },
+      { name: "Claude", logo: claudeLogo },
+      { name: "Codex", logo: codexLogo },
       { name: "Postman", logo: postmanLogo },
-      // { name: "Compass", logo: mcLogo },
+
       { name: "Swagger", logo: swagger },
       { name: "Vercel", logo: vercelLogo },
-      { name: "Netlify", logo: netlifyLogo },
       { name: "Figma", logo: figmaLogo },
     ],
   },

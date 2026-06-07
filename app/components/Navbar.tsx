@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
+import { scrollToSection, scrollToTop } from "../utils/smoothScroll";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   // Detect scroll and change navbar background
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 150);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -23,11 +24,7 @@ const Navbar = () => {
   const handleMenuItemClick = (sectionId: string) => {
     setActiveSection(sectionId);
     setIsOpen(false);
-
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+    scrollToSection(sectionId);
   };
 
   const menuItems = [
@@ -48,13 +45,18 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between py-5 text-white">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <button
+          type="button"
+          onClick={() => scrollToTop()}
+          className="text-lg font-semibold cursor-pointer"
+          aria-label="Scroll to top"
+        >
           <span className="text-[#8245ec]">&lt;</span>
           <span className="text-white">Abdul</span>
           <span className="text-[#8245ec]">/</span>
           <span className="text-white">Dulal</span>
           <span className="text-[#8245ec]">&gt;</span>
-        </div>
+        </button>
 
         {/* Desktop Menu */}
         <ul className="hidden space-x-8 text-gray-300 md:flex">

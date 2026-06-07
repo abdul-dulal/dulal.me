@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 
 import Tilt from "react-parallax-tilt";
 import profileImage from "@/app/assets/profileImage.jpg";
