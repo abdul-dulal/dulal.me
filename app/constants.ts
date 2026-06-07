@@ -53,6 +53,11 @@ import corbe from "@/app/assets/work_logo/corbe.jpg";
 import lorezo from "@/app/assets/work_logo/lorezo.jpg";
 import techure from "@/app/assets/work_logo/techure.png";
 import grabtor from "@/app/assets/work_logo/graptor.png";
+import repuworks from "@/app/assets/work_logo/repuworks.png";
+import aldaleel from "@/app/assets/work_logo/al-daleel.png";
+import anyprint from "@/app/assets/work_logo/anyprint.png";
+import anyscan from "@/app/assets/work_logo/anyscan.png";
+
 import { IProject } from "./types/project.type";
 
 export const SkillsInfo = [
@@ -119,8 +124,8 @@ export const experiences = [
     id: 0,
     img: softcrafty,
     role: "Front-End Developer",
-    company: "Softcrafty",
-    date: "April 2025 - Present",
+    company: "Dorio",
+    date: "January 2025 - Present",
     desc: "Collaborated with cross-functional teams to build high-quality, user-facing features, integrating REST APIs and real-time Socket.IO functionality. I managed global state with Redux to ensure consistent data flow, applied on-page SEO best practices, and delivered a fast, accessible, and cross-browser–compatible user experience.",
     skills: [
       "HTML",
@@ -139,7 +144,7 @@ export const experiences = [
     img: nss,
     role: "Front-End Developer",
     company: "Nss Theme",
-    date: "September 2024 - April 2025",
+    date: "September 2024 - January 2025",
     desc: "Developed and maintained responsive, user-centric web applications using React.js and Next.js, building high-performance, SEO-friendly UI components with TypeScript and Tailwind CSS. Ensured cross-browser compatibility, accessibility, and smooth user experiences while optimizing performance through code splitting, lazy loading, and efficient state management.",
     skills: [
       "JavaScript",
@@ -210,8 +215,6 @@ export const projects: IProject[] = [
       "Prophytes is a private, verified networking platform designed exclusively for members of the Divine Nine (D9) Greek organizations, helping them reconnect with chapters, find fellow members, and build community through secure connections, business directories, and economic empowerment initiatives. The site emphasizes identity verification and meaningful engagement within the D9 network while offering tools to support collaboration, communication, and shared growth.",
     image: prophytes,
     tags: [
-      "HTML",
-      "CSS",
       "JavaScript",
       "React JS",
       "TypeScript",
@@ -222,6 +225,62 @@ export const projects: IProject[] = [
     ],
     github: "https://github.com/ProphytesApp/ProphytesDesktopWeb",
     webapp: "https://www.prophytes.com/",
+  },
+  {
+    id: 8,
+    title: "RepuWorks",
+    description:
+      "RepuWorks is an AI-powered reputation insurance platform that monitors your review profiles daily, uses legally-informed AI to flag challengeable reviews, and automatically prepares legal case files — connecting you to partner attorneys with a single click..",
+    image: repuworks,
+    tags: [
+      "JavaScript",
+      "React JS",
+      "TypeScript",
+      "Next Js",
+      "n8n",
+      "Redux",
+      "Tailwind CSS",
+    ],
+    github: "https://github.com/dorioai/RepuworksAdminNextJs",
+    webapp: "https://repuworks-frontend.dorio.io/",
+  },
+  {
+    id: 9,
+    title: "Al-Daleel",
+    description:
+      "Al-Daleel is a scholarly open-access directory and literary database that catalogues Arabic authors, translators, editors, publishers, and agents — enabling researchers, publishers, and readers to explore, map, and contribute to the global reach of Arabic literature in translation.",
+    image: aldaleel,
+    tags: [
+      "JavaScript",
+      "React JS",
+      "TypeScript",
+      "Next Js",
+      "n8n",
+      "Redux",
+      "Tailwind CSS",
+    ],
+    github: "https://github.com/dorioai/al-daleel-frontend",
+    webapp: "https://al-daleel.dorio.io/",
+  },
+  {
+    id: 20,
+    title: "AnyPrint",
+    description:
+      "AnyPrint is a cloud print management platform for businesses. It lets administrators define printers (by IP, port, driver, and configuration), assign them to users for automated deployment, and manage the whole fleet through a central portal — eliminating the need for traditional on-premise print servers.",
+    image: anyprint,
+    tags: ["JavaScript", "Vue js", "TypeScript", "Pinia", "Tailwind CSS"],
+    github: "git@gitlab.com:anysoft-solutions/anyprint-web-services.git",
+    webapp: "https://print.anysoft.me/dashboard/tenant",
+  },
+  {
+    id: 10,
+    title: "AnyScan",
+    description:
+      "AnyScan is a cloud scan management platform for businesses. Where AnyPrint manages outbound print jobs to printers, AnyScan manages inbound document capture — controlling how physical documents scanned from office MFPs (multifunction printers/copiers) are routed, processed, and delivered within an organization.",
+    image: anyscan,
+    tags: ["JavaScript", "Vue js", "TypeScript", "Pinia", "Tailwind CSS"],
+    github: "git@gitlab.com:anysoft-solutions/anyscan-web-services.git",
+    webapp: "https://scan.anysoft.me/dashboard/tenant",
   },
   {
     id: 1,

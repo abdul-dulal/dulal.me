@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import ReactTypingEffect from "react-typing-effect";
+
 import Tilt from "react-parallax-tilt";
 import profileImage from "@/app/assets/profileImage.jpg";
 import Image from "next/image";
@@ -53,7 +53,7 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <Link
-            href="https://drive.google.com/file/d/1o0wPwcDfOLQndn4GJ9Vqcd4eNc29e0IY/view?usp=sharing"
+            href="https://drive.google.com/file/d/1qfVwpMNw4j-dr-Enh0v-VgewJZpCEGrY/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-8 py-3 mt-5 text-lg font-bold text-white transition duration-300 transform rounded-full hover:scale-105"
