@@ -24,7 +24,7 @@ const About = () => {
             Abdul Dulal
           </h2>
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-2xl  md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight flex items-center flex-wrap justify-center">
+          <h3 className="text-2xl  md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight flex items-center flex-wrap justify-center w-fit">
             <span className="mr-4 text-3xl font-bold text-white sm:text-2xl">
               I am a{" "}
             </span>
